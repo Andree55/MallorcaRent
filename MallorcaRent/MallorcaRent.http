@@ -1,0 +1,6 @@
+@MallorcaRent_HostAddress = http://localhost:5268
+
+GET {{MallorcaRent_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
