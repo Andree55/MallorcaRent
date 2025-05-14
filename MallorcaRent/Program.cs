@@ -1,3 +1,8 @@
+using MallorcaRent.Application.Interfaces;
+using MallorcaRent.Infrastructure.Data;
+using MallorcaRent.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +11,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<AppDbContext>(opt =>
+    opt.UseInMemoryDatabase("MallorcaRentDb"));
+
+builder.Services.AddScoped<IReservationService, ReservationService>();
 
 var app = builder.Build();
 
