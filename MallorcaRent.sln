@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MallorcaRent.Api", "MallorcaRent\MallorcaRent.Api.csproj", "{B7EDFFC4-CB11-4C64-BB46-F4B949188E4C}"
 EndProject
@@ -10,6 +10,35 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MallorcaRent.Application", "MallorcaRent.Application\MallorcaRent.Application.csproj", "{CF3F2B29-ACF8-462B-BA7F-2E694F4BFEE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MallorcaRent.Infrastructure", "MallorcaRent.Infrastructure\MallorcaRent.Infrastructure.csproj", "{D4D7B53C-E453-4496-B54A-A7D6BD004F15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{49899797-0693-4516-9EA4-201AB6668842}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{E223D477-21FE-4FF7-8647-E486AD4044EB}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{63071492-20E1-4338-9CD5-5320E7357113}"
+	ProjectSection(SolutionItems) = preProject
+		App.tsx = App.tsx
+		index.css = index.css
+		main.tsx = main.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pages", "pages", "{23929E6A-2C9E-4F7F-A370-F4EA0CEC62AA}"
+	ProjectSection(SolutionItems) = preProject
+		ReservationPage.tsx = ReservationPage.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{9D4BF540-3BD6-45DF-88F8-25D9E3B7B62D}"
+	ProjectSection(SolutionItems) = preProject
+		ReservationForm.tsx = ReservationForm.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{2F305BF1-0271-4A04-89E7-0F46E7CB82AC}"
+	ProjectSection(SolutionItems) = preProject
+		reservations.ts = reservations.ts
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +65,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E223D477-21FE-4FF7-8647-E486AD4044EB} = {49899797-0693-4516-9EA4-201AB6668842}
+		{63071492-20E1-4338-9CD5-5320E7357113} = {49899797-0693-4516-9EA4-201AB6668842}
+		{23929E6A-2C9E-4F7F-A370-F4EA0CEC62AA} = {63071492-20E1-4338-9CD5-5320E7357113}
+		{9D4BF540-3BD6-45DF-88F8-25D9E3B7B62D} = {63071492-20E1-4338-9CD5-5320E7357113}
+		{2F305BF1-0271-4A04-89E7-0F46E7CB82AC} = {63071492-20E1-4338-9CD5-5320E7357113}
 	EndGlobalSection
 EndGlobal
