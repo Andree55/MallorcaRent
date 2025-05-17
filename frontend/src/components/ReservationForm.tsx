@@ -46,8 +46,12 @@ const ReservationForm = () => {
             });
 
             setResult(`Reservation confirmed! Total cost: €${response.totalCost}`);
-        } catch (err: any) {
-            setResult(`Error: ${err.message}`);
+        } catch (err) {
+            if (err instanceof Error) {
+                setResult(`Error: ${err.message}`);
+            } else {
+                setResult('Unknown error occurred.');
+            }
         }
     };
 

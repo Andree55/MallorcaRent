@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = 'http://localhost:5000/api'; 
 
 export async function getCars() {
     const res = await fetch(`${API_URL}/cars`);
@@ -10,7 +10,7 @@ export async function getLocations() {
     return res.json();
 }
 
-export async function createReservation(data: ReservationRequest) {
+export async function createReservation(data: any) {
     const res = await fetch(`${API_URL}/reservations`, {
         method: 'POST',
         headers: {
@@ -25,11 +25,4 @@ export async function createReservation(data: ReservationRequest) {
     }
 
     return res.json();
-}
-export interface ReservationRequest {
-    carId: number;
-    pickupLocationId: number;
-    returnLocationId: number;
-    startDate: string;
-    endDate: string;
 }

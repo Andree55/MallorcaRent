@@ -11,33 +11,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MallorcaRent.Application", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MallorcaRent.Infrastructure", "MallorcaRent.Infrastructure\MallorcaRent.Infrastructure.csproj", "{D4D7B53C-E453-4496-B54A-A7D6BD004F15}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{49899797-0693-4516-9EA4-201AB6668842}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{E223D477-21FE-4FF7-8647-E486AD4044EB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{E6BCD3FD-4237-4C5A-BB9C-04342B5E364D}"
 	ProjectSection(SolutionItems) = preProject
 		index.html = index.html
+		frontend\public\vite.svg = frontend\public\vite.svg
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{63071492-20E1-4338-9CD5-5320E7357113}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F3142DBE-7192-4F0A-A614-0069F1F3D0A3}"
 	ProjectSection(SolutionItems) = preProject
-		App.tsx = App.tsx
-		index.css = index.css
-		main.tsx = main.tsx
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pages", "pages", "{23929E6A-2C9E-4F7F-A370-F4EA0CEC62AA}"
-	ProjectSection(SolutionItems) = preProject
-		ReservationPage.tsx = ReservationPage.tsx
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{9D4BF540-3BD6-45DF-88F8-25D9E3B7B62D}"
-	ProjectSection(SolutionItems) = preProject
-		ReservationForm.tsx = ReservationForm.tsx
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{2F305BF1-0271-4A04-89E7-0F46E7CB82AC}"
-	ProjectSection(SolutionItems) = preProject
-		reservations.ts = reservations.ts
+		frontend\src\index.css = frontend\src\index.css
+		frontend\src\main.tsx = frontend\src\main.tsx
+		frontend\src\vite-env.d.ts = frontend\src\vite-env.d.ts
 	EndProjectSection
 EndProject
 Global
@@ -67,10 +53,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E223D477-21FE-4FF7-8647-E486AD4044EB} = {49899797-0693-4516-9EA4-201AB6668842}
-		{63071492-20E1-4338-9CD5-5320E7357113} = {49899797-0693-4516-9EA4-201AB6668842}
-		{23929E6A-2C9E-4F7F-A370-F4EA0CEC62AA} = {63071492-20E1-4338-9CD5-5320E7357113}
-		{9D4BF540-3BD6-45DF-88F8-25D9E3B7B62D} = {63071492-20E1-4338-9CD5-5320E7357113}
-		{2F305BF1-0271-4A04-89E7-0F46E7CB82AC} = {63071492-20E1-4338-9CD5-5320E7357113}
+		{E6BCD3FD-4237-4C5A-BB9C-04342B5E364D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F3142DBE-7192-4F0A-A614-0069F1F3D0A3} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5CE55B5-F2ED-4CEE-A1E6-B54ABCA6CC24}
 	EndGlobalSection
 EndGlobal
