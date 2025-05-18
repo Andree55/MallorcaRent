@@ -7,5 +7,6 @@ namespace MallorcaRent.Application.Interfaces
     {
         Task<Reservation> CreateReservationAsync(ReservationRequestDto dto);
         Task<List<Reservation>> GetAllReservationsAsync();
+        Task DeleteAllReservationsAsync();
     }
 }

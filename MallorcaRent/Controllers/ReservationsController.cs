@@ -33,6 +33,20 @@ namespace MallorcaRent.Api.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [HttpDelete]
+        public async Task<IActionResult> DeleteAll()
+        {
+            try
+            {
+                await _reservationService.DeleteAllReservationsAsync();
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
     }
 
 }

@@ -26,6 +26,15 @@ export async function createReservation(data: ReservationRequest) {
 
     return res.json();
 }
+
+export async function deleteAllReservations(): Promise<void> {
+    const res = await fetch(`${API_URL}/reservations`, {
+        method: 'DELETE',
+    });
+    if (!res.ok) {
+        throw new Error('Failed to delete reservations');
+    }
+}
 export interface ReservationRequest {
     carId: number;
     pickupLocationId: number;

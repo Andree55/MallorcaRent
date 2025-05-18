@@ -39,6 +39,13 @@ namespace MallorcaRent.Infrastructure.Repositories
 
         }
 
+        public async Task DeleteAllReservationsAsync()
+        {
+            var allReservations = _context.Reservations.ToList();
+            _context.Reservations.RemoveRange(allReservations);
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<List<Reservation>> GetAllReservationsAsync()
         {
             return await _context.Reservations
