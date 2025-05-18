@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MallorcaRent.Api", "MallorcaRent\MallorcaRent.Api.csproj", "{B7EDFFC4-CB11-4C64-BB46-F4B949188E4C}"
 EndProject
@@ -10,6 +10,50 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MallorcaRent.Application", "MallorcaRent.Application\MallorcaRent.Application.csproj", "{CF3F2B29-ACF8-462B-BA7F-2E694F4BFEE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MallorcaRent.Infrastructure", "MallorcaRent.Infrastructure\MallorcaRent.Infrastructure.csproj", "{D4D7B53C-E453-4496-B54A-A7D6BD004F15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\.env = frontend\.env
+		frontend\.gitignore = frontend\.gitignore
+		frontend\eslint.config.js = frontend\eslint.config.js
+		frontend\index.html = frontend\index.html
+		frontend\package-lock.json = frontend\package-lock.json
+		frontend\package.json = frontend\package.json
+		frontend\README.md = frontend\README.md
+		frontend\tsconfig.app.json = frontend\tsconfig.app.json
+		frontend\tsconfig.json = frontend\tsconfig.json
+		frontend\tsconfig.node.json = frontend\tsconfig.node.json
+		frontend\vite.config.ts = frontend\vite.config.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{E6BCD3FD-4237-4C5A-BB9C-04342B5E364D}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\public\vite.svg = frontend\public\vite.svg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F3142DBE-7192-4F0A-A614-0069F1F3D0A3}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\src\App.tsx = frontend\src\App.tsx
+		frontend\src\index.css = frontend\src\index.css
+		frontend\src\main.tsx = frontend\src\main.tsx
+		frontend\src\vite-env.d.ts = frontend\src\vite-env.d.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pages", "pages", "{E9C85509-68EB-48EA-BD1A-ACECC06E03D8}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\src\pages\AdminPage.tsx = frontend\src\pages\AdminPage.tsx
+		frontend\src\pages\ReservationPage.tsx = frontend\src\pages\ReservationPage.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{2E01096F-7344-4746-BD38-A10FD62E35B8}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\src\api\reservations.ts = frontend\src\api\reservations.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{4265FCEA-842D-41FD-BE86-DB4E557D9E7E}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\src\components\ReservationForm.tsx = frontend\src\components\ReservationForm.tsx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +80,15 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E6BCD3FD-4237-4C5A-BB9C-04342B5E364D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F3142DBE-7192-4F0A-A614-0069F1F3D0A3} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E9C85509-68EB-48EA-BD1A-ACECC06E03D8} = {F3142DBE-7192-4F0A-A614-0069F1F3D0A3}
+		{2E01096F-7344-4746-BD38-A10FD62E35B8} = {F3142DBE-7192-4F0A-A614-0069F1F3D0A3}
+		{4265FCEA-842D-41FD-BE86-DB4E557D9E7E} = {F3142DBE-7192-4F0A-A614-0069F1F3D0A3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5CE55B5-F2ED-4CEE-A1E6-B54ABCA6CC24}
 	EndGlobalSection
 EndGlobal
