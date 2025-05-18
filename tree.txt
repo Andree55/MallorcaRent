@@ -1,0 +1,6 @@
+Folder PATH listing for volume Windows
+Volume serial number is AC2B-2957
+C:\PROJECTS\MALLORCARENT\-L
+Invalid path - \PROJECTS\MALLORCARENT\-L
+No subfolders exist 
+

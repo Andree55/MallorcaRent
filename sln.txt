@@ -1,0 +1,6 @@
+Project(s)
+----------
+MallorcaRent.Application\MallorcaRent.Application.csproj
+MallorcaRent.Domain\MallorcaRent.Domain.csproj
+MallorcaRent.Infrastructure\MallorcaRent.Infrastructure.csproj
+MallorcaRent\MallorcaRent.Api.csproj

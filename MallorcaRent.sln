@@ -26,6 +26,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F3142DBE-719
 		frontend\src\vite-env.d.ts = frontend\src\vite-env.d.ts
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pages", "pages", "{E9C85509-68EB-48EA-BD1A-ACECC06E03D8}"
+	ProjectSection(SolutionItems) = preProject
+		AdminPage.tsx = AdminPage.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{2E01096F-7344-4746-BD38-A10FD62E35B8}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\src\api\reservations.ts = frontend\src\api\reservations.ts
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +65,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E6BCD3FD-4237-4C5A-BB9C-04342B5E364D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{F3142DBE-7192-4F0A-A614-0069F1F3D0A3} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E9C85509-68EB-48EA-BD1A-ACECC06E03D8} = {F3142DBE-7192-4F0A-A614-0069F1F3D0A3}
+		{2E01096F-7344-4746-BD38-A10FD62E35B8} = {F3142DBE-7192-4F0A-A614-0069F1F3D0A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5CE55B5-F2ED-4CEE-A1E6-B54ABCA6CC24}

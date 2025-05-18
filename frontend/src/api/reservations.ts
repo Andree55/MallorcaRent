@@ -33,3 +33,19 @@ export interface ReservationRequest {
     startDate: string;
     endDate: string;
 }
+
+export interface Reservation {
+    id: number;
+    car: { model: string };
+    pickupLocation: { name: string };
+    returnLocation: { name: string };
+    startDate: string;
+    endDate: string;
+    totalCost: number;
+}
+
+export async function getReservations(): Promise<Reservation[]> {
+    const res = await fetch(`${API_URL}/reservations`);
+    if (!res.ok) throw new Error('Failed to fetch reservations');
+    return res.json();
+}

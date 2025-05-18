@@ -45,7 +45,8 @@ const ReservationForm = () => {
                 endDate,
             });
 
-            setResult(`Reservation confirmed! Total cost: €${response.totalCost}`);
+            setResult(`Reservation confirmed! Total cost: \u20AC${response.totalCost}`);
+
         } catch (err) {
             if (err instanceof Error) {
                 setResult(`Error: ${err.message}`);
@@ -63,7 +64,7 @@ const ReservationForm = () => {
                     <option value="">Select</option>
                     {cars.map((car) => (
                         <option key={car.id} value={car.id}>
-                            {car.model} – €{car.pricePerDay}/day
+                            {car.model}: &#8364;{car.pricePerDay}/day
                         </option>
                     ))}
                 </select>
