@@ -110,6 +110,14 @@ MallorcaRent/
 
 ---
 
+## Tests
+
+Integration tests for API controllers using in-memory EF Core.
+
+- Covers Cars, Locations, Reservations
+- Tests both valid and invalid requests
+- Run with `dotnet test`
+
 ## Screenshots
 
 ### Reservation Form
