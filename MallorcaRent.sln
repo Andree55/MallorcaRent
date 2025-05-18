@@ -24,6 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{02
 		frontend\tsconfig.json = frontend\tsconfig.json
 		frontend\tsconfig.node.json = frontend\tsconfig.node.json
 		frontend\vite.config.ts = frontend\vite.config.ts
+		vitest.config.ts = vitest.config.ts
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{E6BCD3FD-4237-4C5A-BB9C-04342B5E364D}"
@@ -55,6 +56,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", 
 		frontend\src\components\ReservationForm.tsx = frontend\src\components\ReservationForm.tsx
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MallorcaRent.Tests", "MallorcaRent.Tests\MallorcaRent.Tests.csproj", "{8390ED96-7FB0-4FA2-ABA1-BB7ECC2F9299}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +80,10 @@ Global
 		{D4D7B53C-E453-4496-B54A-A7D6BD004F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4D7B53C-E453-4496-B54A-A7D6BD004F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4D7B53C-E453-4496-B54A-A7D6BD004F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8390ED96-7FB0-4FA2-ABA1-BB7ECC2F9299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8390ED96-7FB0-4FA2-ABA1-BB7ECC2F9299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8390ED96-7FB0-4FA2-ABA1-BB7ECC2F9299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8390ED96-7FB0-4FA2-ABA1-BB7ECC2F9299}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
