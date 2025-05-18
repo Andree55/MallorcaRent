@@ -22,6 +22,9 @@ const AdminPage = () => {
             .catch((err) => setError(err.message));
     };
 
+    const formatDate = (dateString: string) =>
+        new Date(dateString).toISOString().split('T')[0];
+
     return (
         <div style={{ padding: '2rem' }}>
             <h1>All Reservations</h1>
@@ -38,7 +41,7 @@ const AdminPage = () => {
                     <li key={r.id} style={{ marginBottom: '1rem' }}>
                         <strong>{r.car.model}</strong> – €{r.totalCost}<br />
                         {r.pickupLocation.name} → {r.returnLocation.name}<br />
-                        {r.startDate} → {r.endDate}
+                        {formatDate(r.startDate)} → {formatDate(r.endDate)}
                     </li>
                 ))}
             </ul>
